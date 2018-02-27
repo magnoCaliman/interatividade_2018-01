@@ -1,0 +1,38 @@
+- https://processing.org/
+
+topics - drawing - continuos lines & pattern
+topics - simulate - chain & flocking
+topics - motion - motion & brownian & circleCollision
+topics - image processing - linearImage
+pixelSorting
+http://dillonbaker.com/#/spectrum/
+demos - performance - esfera
+
+http://www.gmunk.com/
+https://www.instagram.com/colakollektiv/
+https://www.instagram.com/pixlpa/?hl=en
+http://www.continuumfashion.com/D.php
+https://vimeo.com/163153865
+
+- http://arduino.cc
+
+blink
+http://www.instructables.com/id/Arduino-Line-Follower-Robot-1/
+http://www.instructables.com/id/Use-an-Accelerometer-and-Gyroscope-with-Arduino/
+http://www.instructables.com/id/coin-slot-detector/
+https://www.youtube.com/watch?v=Z86V_ICUCD4
+https://www.youtube.com/watch?v=Nqk_nWAjBus
+http://www.instructables.com/id/Twitter-Controlled-Pet-Feeder/
+http://www.instructables.com/id/Singing-plant-Make-your-plant-sing-with-Arduino-/
+https://www.youtube.com/watch?v=JCiXV6b7N0A&list=UU4u0V-G5KTeWF5hnubp-lrA&index=9&feature=plcp
+
+- http://supercollider.github.io/
+
+WhiteNoise.ar()
+Everything_rodes
+arteSonora_2017-2_aulas
+ifas_sampler
+https://www.youtube.com/watch?v=JY8eNSu6HrU
+http://supercollider.github.io/community/sc140.html
+
+- Trabalhos dos alunos dos outros semestres que integram as 3 plataformas

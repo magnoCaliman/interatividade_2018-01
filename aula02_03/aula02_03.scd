@@ -55,11 +55,18 @@ rrand(200, 300) //gera um número entre 200 e 300
 {LFTri.ar(freq:600, mul:Line.kr(start:0, end:0.2, dur:5))}.play
 {WhiteNoise.ar(mul:Line.kr(start:1, end:0, dur:0.05))}.play
 
+//experimentem!
+
 //maneira simples de rodar duas funções simultaneamente
 
 (
 {SinOsc.ar(freq:300, mul:0.2)}.play; //agora com ponto e vírgula depois do play!
-{SinOsc.ar(freq:300.5, mul:0.2)}.play;
+{SinOsc.ar(freq:777, mul:0.2)}.play;
+)
+
+(
+{SinOsc.ar(freq:300, mul:0.2)}.play; //https://www.youtube.com/watch?v=gJEbqV8U_dQ
+{SinOsc.ar(freq:301, mul:0.2)}.play;
 )
 
 (
@@ -81,7 +88,7 @@ rrand(200, 300) //gera um número entre 200 e 300
 (
 {Saw.ar(freq:Line.kr(start:100, end:rrand(700, 800), dur:3), mul:0.1)}.play;
 {Saw.ar(freq:Line.kr(start:100, end:rrand(700, 800), dur:3), mul:0.1)}.play;
-{Saw.ar(freq:Line.kr(start:100, end:rrand(700, 800), dur:8), mul:0.1)}.play;
 {Saw.ar(freq:Line.kr(start:100, end:rrand(700, 800), dur:3), mul:0.1)}.play;
 {Saw.ar(freq:Line.kr(start:100, end:rrand(700, 800), dur:3), mul:0.1)}.play;
+{Saw.ar(freq:Line.kr(start:100, end:rrand(700, 8000), dur:8), mul:0.1)}.play;
 )

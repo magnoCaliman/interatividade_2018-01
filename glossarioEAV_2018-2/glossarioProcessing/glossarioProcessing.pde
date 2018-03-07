@@ -11,3 +11,5 @@ point();
 line();
 rect();
 ellipse();
+
+random();

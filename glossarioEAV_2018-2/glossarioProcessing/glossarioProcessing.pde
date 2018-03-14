@@ -13,3 +13,30 @@ rect();
 ellipse();
 
 random();
+
+//
+
+void setup()
+{
+
+}
+
+void draw()
+{
+
+}
+
+fill();
+random();
+
+rectMode();
+mouseX
+mouseY
+println();
+
+noLoop();
+strokeWeight();
+
+frameRate();
+width
+height

@@ -40,3 +40,11 @@ strokeWeight();
 frameRate();
 width
 height
+
+//
+
+abs()
+constrain()
+pmouseX
+frameCount
+% // modulo

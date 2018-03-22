@@ -8,5 +8,5 @@ void setup()
 void draw()
 {
   stroke(random(255), random(255), random(255));
-  line(mouseX, mouseY, pmouseX, pmouseY);
+  line(pmouseX, pmouseY, mouseX, mouseY);
 }

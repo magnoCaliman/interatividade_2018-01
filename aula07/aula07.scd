@@ -1,5 +1,7 @@
 s.boot
 s.volume.gui
+s.meter
+s.freqscope
 
 // Low Pass Filter
 {LPF.ar(in:WhiteNoise.ar(mul:0.4), freq:MouseX.kr(minval:200, maxval:15000))!2}.play;
@@ -16,7 +18,7 @@ s.volume.gui
 {LPF.ar(in:Pulse.ar(freq:300, mul:0.2), freq:MouseX.kr(100, 20000)!2)}.freqscope
 {HPF.ar(in:Pulse.ar(freq:300, mul:0.2), freq:MouseX.kr(100, 20000)!2)}.freqscope
 
-{Ringz.ar(in:Saw.ar(freq:300, mul:0.01),freq:MouseX.kr(100, 5000)!2)}.freqscope
+{Ringz.ar(in:Saw.ar(freq:300, mul:0.005),freq:MouseX.kr(100, 5000)!2)}.freqscope
 
 ////
 

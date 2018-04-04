@@ -22,6 +22,9 @@ MouseX.kr()
 MouseY.kr()
 Line.ar()
 
+s.volume.gui
+s.meter
+
 LPF.ar()
 HPF.ar()
 Ringz.ar()

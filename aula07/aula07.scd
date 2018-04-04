@@ -43,7 +43,7 @@ s.volume.gui
 	geradorSom = Pulse.ar(300, mul:0.2);
 	freqFiltro = MouseX.kr(200, 15000);
 
-	LPF.ar(in: geradorSom, freq: freqFiltro)!2;
+	LPF.ar(in:geradorSom, freq:freqFiltro)!2;
 
 }.play
 )
@@ -56,7 +56,7 @@ s.volume.gui
 	osc1 = Saw.ar(freqOsc, mul:0.2);
 	osc2 = Saw.ar(freqOsc + 0.5, mul: 0.2);
 
-	LPF.ar(in: osc1 + osc2, freq:MouseX.kr(200, 15000))!2;
+	LPF.ar(in:osc1 + osc2, freq:MouseX.kr(200, 15000))!2;
 }.play
 )
 

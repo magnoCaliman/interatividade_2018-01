@@ -21,3 +21,15 @@ rrand()
 MouseX.kr()
 MouseY.kr()
 Line.ar()
+
+LPF.ar()
+HPF.ar()
+Ringz.ar()
+Dust.ar()
+Impulse.ar()
+
+{}.freqscope
+
+var variavelLocal
+~variavelGlobal
+.free

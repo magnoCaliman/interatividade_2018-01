@@ -25,8 +25,8 @@ s.freqscope
 // dois geradores de som novos: Dust.ar & Impulse.ar
 // são "geradores de impulsos"
 
-{Dust.ar(density:100)!2}.play
-{Impulse.ar(freq:10)!2}.play
+{Dust.ar(density:1000)!2}.play
+{Impulse.ar(freq:5)!2}.play
 
 // geradores de impulso + filtros ressonantes = <3
 {Ringz.ar(in:Impulse.ar(5), freq:600, mul:0.2)!2}.play
@@ -43,6 +43,7 @@ s.freqscope
 	var geradorSom, freqFiltro;
 
 	geradorSom = Pulse.ar(300, mul:0.2);
+	// geradorSom = WhiteNoise.ar(0.5);
 	freqFiltro = MouseX.kr(200, 15000);
 
 	LPF.ar(in:geradorSom, freq:freqFiltro)!2;
@@ -64,14 +65,15 @@ s.freqscope
 
 (
 {
-	var trigger, freqFiltro;
+	var trigger, freqFiltro, banana;
 
 	trigger = Dust.ar(2, mul:0.3);
-	freqFiltro = 600;
+	freqFiltro = 200;
+	banana = MouseX.kr(0.1, 10);
 
-	Ringz.ar(trigger, freqFiltro * 1, mul:0.3) +
-	Ringz.ar(trigger, freqFiltro * 2, mul:0.3) +
-	Ringz.ar(trigger, freqFiltro * 3, mul:0.3) !2
+	Ringz.ar(trigger, freqFiltro * 1, decaytime:banana, mul:0.3) +
+	Ringz.ar(trigger, freqFiltro * 2, decaytime:banana * 2 , mul:0.3) +
+	Ringz.ar(trigger, freqFiltro * 3, decaytime:banana / 2 , mul:0.3) !2
 }.freqscope
 )
 
@@ -92,6 +94,8 @@ s.freqscope
 // sintaxe e escopo das variáveis.
 // qual a diferença entre SC e Processing?
 
+n
+
 n = 10;
 n.postln;
 (n + 1).postln;
@@ -106,7 +110,7 @@ numeroLocal.sqrt.postln;
 
 ////
 
-a = {SinOsc.ar(400, mul:0.1)!2}.play;
+a = {SinOsc.ar(rrand(200, 400), mul:0.1)!2}.play;
 a.free;
 
 b = {Dust.ar(200, mul:0.1)!2}.play;

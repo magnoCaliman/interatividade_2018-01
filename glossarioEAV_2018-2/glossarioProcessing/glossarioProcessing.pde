@@ -53,3 +53,11 @@ frameCount
 
 int 
 float
+
+//
+
+if
+else
+
+constrain()
+translate()

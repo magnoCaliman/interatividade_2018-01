@@ -7,10 +7,10 @@ void draw()
 {
   if (random(1) > 0.5)
   {
-    println("se menor que 0.5, cara...");
+    println("se maior que 0.5, cara...");
   }
   else
   {
-    println("se maior que 0.5, coroa...");
+    println("se menor que 0.5, coroa...");
   }
 }

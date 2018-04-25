@@ -3,7 +3,7 @@ int numAleatorio;
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(9600); //baud rate
   pinMode(pinoLED, OUTPUT);  
 }
 

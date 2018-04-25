@@ -15,5 +15,5 @@ void loop()
 //  float valorSensor_volts = valorSensor * (5.0 / 1024.0);
 //  Serial.println(valorSensor_volts);
 
-  delay(20);
+  delay(10);
 }

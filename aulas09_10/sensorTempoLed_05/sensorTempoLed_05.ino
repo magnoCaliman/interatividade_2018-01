@@ -12,7 +12,7 @@ void setup()
 void loop()
 {
   leituraSensor = analogRead(pinoSensor);
-  leituraSensor = map(leituraSensor, 0, 1023, 100, 2000);
+//  leituraSensor = map(leituraSensor, 0, 1023, 100, 2000);
 
   digitalWrite(pinoLed, HIGH);
   delay(leituraSensor);
@@ -21,4 +21,5 @@ void loop()
   delay(leituraSensor);
 
   Serial.println(leituraSensor);
+  delay(10);
 }

@@ -11,7 +11,7 @@ void loop()
 {
   int valorSensor = analogRead(pinoPot);
   Serial.println(valorSensor);
-  
+//  
 //  float valorSensor_volts = valorSensor * (5.0 / 1024.0);
 //  Serial.println(valorSensor_volts);
 

@@ -10,7 +10,7 @@ void setup()
 void loop()
 {
   analogWrite(pinoLed, brilhoLed); // qual a diferença entre analogWrite e digitalWrite?
-  brilhoLed++; 
+  brilhoLed = brilhoLed + 10; 
   
   Serial.println(brilhoLed);
   delay(100);

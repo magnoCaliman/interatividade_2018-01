@@ -11,7 +11,7 @@ void setup()
 void loop()
 {
   int leituraSensor = analogRead(pinoSensor);
-//  leituraSensor = map(leituraSensor, 0, 1023, 0, 255);
+  leituraSensor = map(leituraSensor, 0, 1023, 0, 255);
   
   analogWrite(pinoLed, leituraSensor); // qual a diferença entre analogWrite e digitalWrite?
   

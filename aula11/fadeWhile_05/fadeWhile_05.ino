@@ -1,6 +1,6 @@
 int pinoLed = 3;
 int brilho = 0;
-int i = 1;
+int i = 50;
 
 void setup()
 {
@@ -16,7 +16,7 @@ void loop()
     brilho = brilho + i;
                                    //tudo que está dentro dessas chaves
     Serial.println(brilho);        //é avaliado em loop
-    delay(30);                    
+    delay(1000);                    
   } 
 
   analogWrite(pinoLed, LOW);

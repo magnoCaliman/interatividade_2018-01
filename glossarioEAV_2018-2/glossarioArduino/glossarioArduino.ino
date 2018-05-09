@@ -17,3 +17,9 @@ map()
 
 digitalWrite()
 analogWrite()
+
+if()
+while()
+
+Serial.read()
+Serial.write()

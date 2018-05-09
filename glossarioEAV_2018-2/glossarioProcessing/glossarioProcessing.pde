@@ -61,3 +61,20 @@ else
 
 constrain()
 translate()
+
+while()
+
+//
+
+import
+
+printArray()
+String
+
+Serial.list()
+new Serial(this, nomePorta, baudRate);
+
+void serialEvent(Serial conexaoArduino)
+{
+
+}

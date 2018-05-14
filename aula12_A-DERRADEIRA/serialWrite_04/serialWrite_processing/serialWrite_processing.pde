@@ -15,7 +15,7 @@ void draw()
   println(mnsgArduino);
 }
 
-void serialEvent(Serial conexaoArduino)
+void serialEvent(Serial leituraArduino)
 {
-  mnsgArduino = conexaoArduino.read();
+  mnsgArduino = leituraArduino.read();
 }
